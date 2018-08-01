@@ -1,0 +1,16 @@
+
+// this line install sound player
+sudo apt-get -y install omxplayer
+
+
+// command to play video
+omxplayer myvideo.mp4
+omxplayer -o local sound.pm3
+//wiringpi
+git clone git://git.drogon.net/wiringPi
+-lwiringPi
+//run this to enable gpio and enable remote gpio from raspi-config
+sudo pigpiod 
+//we need to use bcm and convert it to pin numbers
+// led types
+//eg bcm 27 is pin 13 in raspi zero

@@ -1,0 +1,28 @@
+jame webserver on raspi for austin 
+raspi octo
+
+
+// force sound to audio jack in raspi-config
+//this line enable sound on gpio
+sudo nano /boot/config.txt
+#add to bottom of file
+
+dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4
+
+
+
+omxplayer
+//commands to play sound
+omxplayer -o local sound.pm3
+// to increase / decrease volume 
++ / -
+//space bar to pause
+//escape key to exit
+
+//i used this website for the pinouts of raspberry zero
+https://pinout.xyz/
+
+
+
+sudo apt-get -y install mpg321
+
