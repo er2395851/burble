@@ -33,7 +33,7 @@ sudo reboot
 sudo apt-get update
 sudo apt-get install -y mpg321 mplayer git php lsof libboost-all-dev
 ```
-
+![Screenshot](screenshot.png)
 Note: Also install cmake if you will edit any code.
 
 This will take some time, grab a snack or coffee :)
