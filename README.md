@@ -6,24 +6,17 @@ This only gives you terminal access, so it is a bit trickier (really only to con
 I can probably make this all a script we can run at startup that will set up the brain.
 
 **1) Connect to wifi (If you installed with desktop, it's probably fine and you can use the GUI instead of this step)**
-
-Add the following to this file (replacing ssid and password): 
-/etc/network/interfaces
+![Screenshot](screenshot.png)
 
 ```
-auto lo
- 
-iface lo inet loopback
-iface eth0 inet dhcp
- 
-allow-hotplug wlan0
-auto wlan0
- 
- 
-iface wlan0 inet dhcp
-        wpa-ssid "ssid"
-        wpa-psk "password"
+sudo raspi-config
 ```
+![Screenshot](screenshot2.png)
+![Screenshot](screenshot3.png)
+![Screenshot](screenshot4.png)
+![Screenshot](screenshot5.png)
+
+
 
 sudo reboot
 
@@ -33,7 +26,7 @@ sudo reboot
 sudo apt-get update
 sudo apt-get install -y mpg321 mplayer git php lsof libboost-all-dev
 ```
-![Screenshot](screenshot.png)
+
 Note: Also install cmake if you will edit any code.
 
 This will take some time, grab a snack or coffee :)
